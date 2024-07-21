@@ -1,0 +1,6 @@
+.search-field {
+  background-image: url("/search.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 1%;
+}
