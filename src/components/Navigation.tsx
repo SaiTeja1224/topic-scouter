@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <nav className="flex justify-end pt-3 items-center gap-x-10 w-[70%] mx-auto text-white text-xl">
       <p className="absolute left-[50%] translate-x-[-50%] top-6">
-        <img src="/logo.svg" width={200} height={200} />
+        <img src="/topic-scouter/logo.svg" width={200} height={200} />
       </p>
       {user ? (
         <>

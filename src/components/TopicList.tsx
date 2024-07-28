@@ -12,7 +12,7 @@ function TopicList() {
     <section className="h-full min-h-full flex flex-col">
       <header className="border-b-2 border-zinc-100 p-2 flex items-center justify-between">
         <img
-          src="/sorting.png"
+          src="/topic-scouter/sorting.png"
           width={34}
           height={34}
           onClick={() => handleSortOrder(sortOrder === "ASC" ? "DESC" : "ASC")}
