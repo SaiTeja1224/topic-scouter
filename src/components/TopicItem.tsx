@@ -14,7 +14,7 @@ function TopicItem({ topic, isActive }: { topic: Topic; isActive: boolean }) {
     >
       <a
         href={`#${topic._id}`}
-        className="flex justify-between items-center p-4"
+        className={"flex justify-between items-center p-4"}
       >
         <div>
           <h3 className="text-2xl font-bold text-dark leading-none">

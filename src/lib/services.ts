@@ -1,10 +1,9 @@
 import { API_URL_V1, REQUEST_CONFIG } from "./constant";
 
-export const getTopics = async (options ?: Record<string, string>) => {
-  const params = new URLSearchParams(options)
+export const getTopics = async (options?: Record<string, string>) => {
+  const params = new URLSearchParams(options);
   const searchParams = params.toString();
-  const getTopicsUrl =
-    API_URL_V1 + `topics?${searchParams}`;
+  const getTopicsUrl = API_URL_V1 + `topics?${searchParams}`;
   const response = await fetch(getTopicsUrl, {
     method: "GET",
     ...REQUEST_CONFIG,

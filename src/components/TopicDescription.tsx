@@ -25,7 +25,7 @@ function TopicDescription() {
 
   const user = useStore((state) => state.user);
 
-  const { data } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ["topic", activeId],
     queryFn: async () => {
       if (activeId) {
@@ -88,6 +88,18 @@ function TopicDescription() {
   const handleHoverLeave = () => {
     setHoveringIndex(-1);
   };
+
+  if (isLoading) {
+    return (
+      <div className="h-full flex items-center justify-center flex-col">
+        <div className="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    );
+  }
 
   if (!activeTopic) {
     return (
