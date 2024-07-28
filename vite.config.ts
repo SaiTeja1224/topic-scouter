@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/topic-scouter",
+  base: "topic-scouter",
   plugins: [react()],
   resolve: {
     alias: {
